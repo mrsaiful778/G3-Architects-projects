@@ -1,0 +1,54 @@
+.Header, .Nav, .Main, .Sidebar, .Advertise, footer{
+    background-color: khaki;
+    border: 2px solid tomato;
+    padding: 5px;
+    border-radius: 5px;
+}
+.Header{
+    grid-area: Header;
+
+}
+.Nav{
+    grid-area: Nav;
+}
+.Main{
+    grid-area: Main;
+
+}
+.Sidebar{
+    gap: 10px;
+    grid-area: Sidebar;
+}
+.Advertise{
+    gap:10px;
+    grid-area: Advertise;
+}
+footer{
+    grid-area: footer;
+    
+}
+.container{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "Header Header Header Header"
+    "Nav Main Main Sidebar"
+    "Nav Main Main Advertise"
+    "footer footer footer footer"
+    ;
+}
+
+@media screen and (min-width: 576px) and (max-width:992px){
+    .container{
+        grid-template-areas: 
+        "Header Header Header"
+        "Nav Nav Nav"
+       "Sidebar Sidebar"
+        "Main Main"
+       "Advertise Advertise"
+       "footer"
+       ;
+
+    }
+    
+}

@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-section{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    color: red;
+
+
+}
+
+nav a{
+
+    text-decoration: none;
+    
+}
+.Login-form-container{
+   display: flex;
+    justify-content: center;
+    
+    
+    
+}
+.Login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 50%;
+    height: 400px;
+    border-radius: 8px;
+    color: blueviolet;
+
+}
+.Login-form h3:hover{
+    color: brown;
+    background-color: aqua;
+}
